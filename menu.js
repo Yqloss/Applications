@@ -1,0 +1,2 @@
+var menu=document.getElementById("menu");
+menu.innerHTML="<a href=\"https://yqloss.github.io\">Go back</a><br><b>----Menu----</b><br><a href=\"https://yqloss.github.io/Applications/0.html\">Syobon Action</a><br><a href=\"https://yqloss.github.io/Applications/1.html\">Visual C++ 6.0</a>"
