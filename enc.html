@@ -22,7 +22,7 @@
 <script>
 function B64toURL(str){
 str.replace(new RegExp("A","g"),"AA");
-str.replace(new RegExp("+","g"),"AB");
+str.replace(new RegExp("\+","g"),"AB");
 str.replace(new RegExp("/","g"),"AC");
 str.replace(new RegExp("-","g"),"AD");
 str.replace(new RegExp("=","g"),"AE");
