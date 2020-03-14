@@ -22,10 +22,10 @@
 <script>
 function B64toURL(str){
 str.replace(/A/g,"AA");
-str.replace(/+/g,"AB");
+str.replace(/\+/g,"AB");
 str.replace(/\//g,"AC");
-str.replace(/-/g","AD");
-str.replace(/=/g","AE");
+str.replace(/\-/g","AD");
+str.replace(/\=/g","AE");
 return str;
 }
 function encode0(){
