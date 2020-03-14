@@ -6,26 +6,26 @@
 <input id="0.0"/>
 <button onclick="javascript:encode0();">Encode</button>
 </div>
-<p id="0.1"/>
+<p id="0.1"></p>
 <h1>Encode Unicode</h1>
 <div>
 <input id="1.0"/>
 <button onclick="javascript:encode1();">Encode</button>
 </div>
-<p id="1.1">
+<p id="1.1"></p>
 <h1>Encode String</h1>
 <div>
 <input id="2.0"/>
 <button onclick="javascript:encode2();">Encode</button>
 </div>
-<p id="2.1">
+<p id="2.1"></p>
 <script>
 function B64toURL(str){
 str.replace(/A/g,"AA");
 str.replace(/\+/g,"AB");
 str.replace(/\//g,"AC");
-str.replace(/\-/g","AD");
-str.replace(/\=/g","AE");
+str.replace(/\-/g,"AD");
+str.replace(/\=/g,"AE");
 return str;
 }
 function encode0(){
