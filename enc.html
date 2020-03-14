@@ -21,10 +21,11 @@
 <p id="2.1">
 <script>
 function B64toURL(str){
-str.replace("A","AA");
-str.replace("+","AB");
-str.replace("/","AC");
-str.replace("-","AD");
+str.replace(/A/g,"AA");
+str.replace(/+/g,"AB");
+str.replace(/\//g,"AC");
+str.replace(/-/g","AD");
+str.replace(/=/g","AE");
 return str;
 }
 function encode0(){
