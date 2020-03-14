@@ -1,14 +1,33 @@
 <!doctype html>
 <html>
 <body>
+<h1>Encode URL</h1>
 <div>
-<input id="a"/>
-<button onclick="javascript:encode();">Encode</button>
+<input id="0.0"/>
+<button onclick="javascript:encode0();">Encode</button>
 </div>
-<p id="b"/>
+<p id="0.1"/>
+<h1>Encode Unicode</h1>
+<div>
+<input id="1.0"/>
+<button onclick="javascript:encode1();">Encode</button>
+</div>
+<p id="1.1">
+<h1>Encode String</h1>
+<div>
+<input id="2.0"/>
+<button onclick="javascript:encode2();">Encode</button>
+</div>
+<p id="2.1">
 <script>
-function encode(){
-document.getElementById("b").innerHTML="https://yqloss.github.io/j/?"+btoa(document.getElementById("a").value);
+function encode0(){
+document.getElementById("0.1").innerHTML="https://yqloss.github.io/j/?"+btoa(document.getElementById("0.0").value);
+}
+function encode1(){
+document.getElementById("1.1").innerHTML=encodeURIComponent(document.getElementById("1.0").value);
+}
+function encode2(){
+document.getElementById("2.1").innerHTML="https://yqloss.github.io/j/?-"+btoa(encodeURIComponent(document.getElementById("2.0").value));
 }
 </script>
 </body>
