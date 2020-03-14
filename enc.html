@@ -29,13 +29,13 @@ str=str.split("=").join("AE");
 return str;
 }
 function encode0(){
-document.getElementById("0.1").value="https://yqloss.github.io/j?"+B64toURL(btoa(document.getElementById("0.0").value))+"=";
+document.getElementById("0.1").value="https://yqloss.github.io/j?="+B64toURL(btoa(document.getElementById("0.0").value));
 }
 function encode1(){
 document.getElementById("1.1").value=encodeURIComponent(document.getElementById("1.0").value);
 }
 function encode2(){
-document.getElementById("2.1").value="https://yqloss.github.io/j?"+B64toURL("-"+btoa(encodeURIComponent(document.getElementById("2.0").value)))+"=";
+document.getElementById("2.1").value="https://yqloss.github.io/j?="+B64toURL("-"+btoa(encodeURIComponent(document.getElementById("2.0").value)));
 }
 </script>
 </body>
